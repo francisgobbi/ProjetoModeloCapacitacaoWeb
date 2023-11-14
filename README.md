@@ -1,4 +1,4 @@
-# Desafio BugBanck.
+# Capacitação Automação Web em Gradle.
 Os sub tópicos abaixo descrevem algumas decisões tomadas na estruturação do projeto.
 
 ## Tecnologia Utilizadas
