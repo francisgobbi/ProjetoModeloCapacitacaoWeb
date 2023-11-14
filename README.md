@@ -12,11 +12,11 @@ Os sub tópicos abaixo descrevem algumas decisões tomadas na estruturação do proj
 ##	Configurações de pastas do projeto:
 
 ##  Folder project:
-- A pasta **src** tem a seguinte estrutura informada, **main** --> **java** --> **Report** -> **Framework** -> **DriverManager**, **Browser**,**Utils** e classe **TestBase**, encontram-se as funções para abrir o site, navegar e waits e estrutura do proejto.
+- A pasta **src** tem a seguinte estrutura informada, **main** --> **java** --> **Report** -> **Framework** -> **DriverManager**, **Browser**,**Utils** e classe **TestBase**, encontram-se as funções para abrir o site, navegar e waits e estrutura do projeto.
 
 - A pasta **src** tem a seguinte estrutura informada, **main** --> **java** --> **resources** --> **Properties**, encontram-se os valores das proriedades.
 
-- A pasta **src** tem a seguinte estrutura informada, **test** --> **java** --> **PageObjects**, **Tasks**, **TestCases**, **TestSuites**, **Validations** mesma estrutura informado no enunciado do desafio.
+- A pasta **src** tem a seguinte estrutura informada, **test** --> **java** --> **PageObjects**, **Tasks**, **TestCases**, **TestSuites**, **Validations** estrutura modelo utilizada na capacitação.
 
 ## No arquivo build.gradle encontram-se as dependecies utilizadas no proejto:
 - Adicionardependecy.
