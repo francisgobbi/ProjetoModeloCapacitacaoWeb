@@ -26,6 +26,7 @@ Os sub tópicos abaixo descrevem algumas decisões tomadas na estruturação do proj
 - implementation 'com.google.guava:guava:29.0-jre' 
 - implementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
 - implementation 'org.seleniumhq.selenium:selenium-java:4.8.1'
+- testImplementation 'org.junit.platform:junit-platform-suite-api:1.10.0'
 
 ## Testes Automatizados
 Testes automatizados para criar conta, simular o login criar movimentação no site https://seubarriga.wcaquino.me/, acessar a conta criada e realizar operações de receber e pagar conta. Validar o extrato e saldo da conta utilizada.
