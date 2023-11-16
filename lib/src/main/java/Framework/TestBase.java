@@ -1,7 +1,8 @@
 package Framework;
 
-import org.junit.After;
-import org.junit.Before;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import Framework.Browser.DriverManager;
 import Framework.Browser.TypeBrowser;
@@ -23,13 +24,13 @@ private static WebDriver driver;
     
 
     
-    @Before
+    @BeforeEach
     public void setup() {
 
         getDriverManager().get(URL);
     }
     
-    @After
+    @AfterEach
     public void finish() {
         Report.close();
         quitDriver();

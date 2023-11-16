@@ -1,7 +1,7 @@
 package Validation;
 
 
-import org.junit.Assert;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.Status;
@@ -23,7 +23,8 @@ public class MovimentacaoValidation {
 	
 	public void validationAlertSuccess(String message) {
         try {        	
-            Assert.assertEquals(message, moviPage.getAlertMoviAdd().getText());
+            //Assert.assertEquals(message, moviPage.getAlertMoviAdd().getText());
+        	assertEquals(message, moviPage.getAlertMoviAdd().getText());
             Report.log(Status.PASS, "Cadastro efetuado com Sucesso.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             Report.log(Status.FAIL, e.getMessage(), Screenshot.captureBase64(driver));

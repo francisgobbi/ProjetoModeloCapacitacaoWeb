@@ -1,7 +1,7 @@
 package TestCases;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.Status;

@@ -1,7 +1,8 @@
 package Validation;
 
 
-import org.junit.Assert;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 import com.aventstack.extentreports.Status;
 
@@ -21,7 +22,7 @@ public class ResumoValidation {
 	
 	public void validationLineTableIsVisible() {
         try {        	
-            Assert.assertTrue(resumoPage.getValidLineTableTrue().isDisplayed());
+            assertTrue(resumoPage.getValidLineTableTrue().isDisplayed());
             Report.log(Status.PASS, "Tabela está Aparecendo OK.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             Report.log(Status.FAIL, e.getMessage(), Screenshot.captureBase64(driver));

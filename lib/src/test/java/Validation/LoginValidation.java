@@ -1,7 +1,9 @@
 package Validation;
 
 
-import org.junit.Assert;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.Status;
@@ -23,7 +25,7 @@ public class LoginValidation {
 	
     public void validationLoginOK(String nome) {
         try {
-            Assert.assertTrue(loginPage.getAlertLoginOK(nome).isDisplayed());
+        	assertTrue(loginPage.getAlertLoginOK(nome).isDisplayed());
             Report.log(Status.PASS, "Login efetuado com sucesso.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             Report.log(Status.FAIL, e.getMessage(), Screenshot.captureBase64(driver));
@@ -32,7 +34,7 @@ public class LoginValidation {
     
     public void validationAlertCadUserOK() {
         try {
-            Assert.assertTrue(loginPage.getAlertCadNewUserOK().isDisplayed());
+            assertTrue(loginPage.getAlertCadNewUserOK().isDisplayed());
             Report.log(Status.PASS, "Usuario cadastrado com sucesso.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             Report.log(Status.FAIL, e.getMessage(), Screenshot.captureBase64(driver));
@@ -41,7 +43,7 @@ public class LoginValidation {
     
     public void validationLogoSeuBarriga() {
         try {
-            Assert.assertTrue(loginPage.getLogoSeuBarriga().isDisplayed());
+            assertTrue(loginPage.getLogoSeuBarriga().isDisplayed());
             Report.log(Status.PASS, "Você está na pagina de login.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             Report.log(Status.FAIL, e.getMessage(), Screenshot.captureBase64(driver));
@@ -50,7 +52,7 @@ public class LoginValidation {
     
     public void validationAlertUserExisting() {
         try {
-            Assert.assertTrue(loginPage.getAlertUserExisting().isDisplayed());
+            assertTrue(loginPage.getAlertUserExisting().isDisplayed());
             Report.log(Status.PASS, "Usuário existente.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             Report.log(Status.FAIL, e.getMessage(), Screenshot.captureBase64(driver));
@@ -59,7 +61,7 @@ public class LoginValidation {
     
     public void validationAlertLoginUserInvalid() {
         try {
-            Assert.assertTrue(loginPage.getAlertLoginUserInvalido().isDisplayed());
+            assertTrue(loginPage.getAlertLoginUserInvalido().isDisplayed());
             Report.log(Status.PASS, "Usuário Inválido OK.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             Report.log(Status.FAIL, e.getMessage(), Screenshot.captureBase64(driver));

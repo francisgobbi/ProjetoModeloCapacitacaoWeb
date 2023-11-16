@@ -1,6 +1,9 @@
 package Validation;
 
-import org.junit.Assert;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.asynchttpclient.util.Assertions;
 import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.Status;
@@ -22,7 +25,7 @@ public class GenericValidation {
 	
     public void validationAlertSuccess() {
         try {
-            Assert.assertTrue(genericPage.getAlertSuccessMessage().isDisplayed());
+            assertTrue(genericPage.getAlertSuccessMessage().isDisplayed());
             Report.log(Status.PASS, "Cadastro efetuado com Sucesso.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             Report.log(Status.FAIL, e.getMessage(), Screenshot.captureBase64(driver));
@@ -31,7 +34,7 @@ public class GenericValidation {
     
     public void validationAlertError() {
         try {
-            Assert.assertTrue(genericPage.getAlertErrorMessage().isDisplayed());
+        	assertTrue(genericPage.getAlertErrorMessage().isDisplayed());
             Report.log(Status.PASS, "Nome ou e-mail ja existente.", Screenshot.captureBase64(driver));
         } catch (Exception e) {
             // TODO: handle exception
