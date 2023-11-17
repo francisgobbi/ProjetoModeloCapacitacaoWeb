@@ -45,9 +45,6 @@ Testes automatizados para criar conta, simular o login criar movimentação no sit
 - - Reload all Gradle Project
 - - Executar os testes na pasta **src** -> **test** -> **TestCases** -->  **TestSuites**
 
-- Caso não conseguir executar o projeto com sucesso, realize os passos abaixo:
-- - mvn clean
-- - mvn install
 
 ## Notas Gerais
 - BeforeEach e AfterEach (Anotações JUnit5)
