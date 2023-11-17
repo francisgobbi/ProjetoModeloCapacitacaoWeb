@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
-public class LibraryTestt {
+public class LoginSucessoSiteSeuBarrigaTest {
 	
 	@Test
 	public void testProjetoModeloCapacitacaoWeb() throws InterruptedException {
